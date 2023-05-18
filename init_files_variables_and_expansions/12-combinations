@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {{a..n},{p..z}}{{a..n},{p..z}} | sort | uniq
+echo {{a..n},{p..z}}{{a..n},{p..z}} | sort | uniq | tr " " "\n"
