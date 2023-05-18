@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {{a..n},{p..z}}{{a..n},{p..z}} | sort | uniq | tr " " "\n"
+echo {a..z}{a..z} | sort | uniq | tr " " "\n" | grep -v "oo"
