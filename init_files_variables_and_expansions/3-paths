@@ -1,0 +1,5 @@
+#!/bin/bash/
+PATH=":{$PATH}"
+FINDNUMDIRECTORIES="cut -c=":" $PATH"
+NUMOFDIRS="wc $FINDNUMDIRECTORIES"
+printf $NUMOFDIRS
