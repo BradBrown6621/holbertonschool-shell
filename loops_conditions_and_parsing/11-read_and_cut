@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#
+LIST="$(ls /etc/passwd)"
+INC="0"
+while [ 
+	

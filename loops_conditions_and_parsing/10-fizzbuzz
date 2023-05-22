@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+
+INC="0"
+
+while [ $INC -le 100 ] ; do
+	INC="$(($INC + 1))"
+	if [ $(($INC % 3)) == 0 ] ; then
+		echo "Fizz"
+	elif [ $(($INC % 5)) == 0 ] ; then
+		echo "Buzz"
+	else
+		echo "$INC"
+	fi
+done
