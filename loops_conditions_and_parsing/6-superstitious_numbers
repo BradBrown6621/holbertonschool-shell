@@ -1,14 +1,14 @@
-fizzbuzz
-read_and_cut
-tell_the_story_of_passwd
-lets_parse_apache_logs
-dig_the_data
-for_best_school
-while_best_school
-until_best_school
-if_9_say_hi
-4_bad_luck_8_is_your_chance
-superstitious_numbers
-clock
-for_ls
-to_file_or_not_to_file
+#!/usr/bin/env bash
+# 
+
+INC="1"
+
+while [ $INC -le "20" ] ; do
+	case $INC in
+		(4) echo "$INC" ; echo "bad luck from China" ;;
+		(9) echo "$INC" ; echo "bad luck from Japan" ;;
+		(17) echo "$INC" ; echo "bad luck from Italy" ;;
+		(*) echo "$INC" ;;
+	esac
+	((INC++))
+done
