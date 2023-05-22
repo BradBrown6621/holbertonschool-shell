@@ -5,5 +5,5 @@ INC="0"
 
 until [ $INC -eq 10 ] ; do
 	echo "Best School"
-	INC="$(($INC + 1))"
+	((INC++))
 done
