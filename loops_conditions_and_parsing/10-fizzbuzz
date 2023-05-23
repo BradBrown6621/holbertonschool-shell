@@ -4,8 +4,10 @@
 INC="0"
 
 while [ $INC -le 100 ] ; do
-	((INC + 1))
-	if [ $((INC % 3)) == 0 ] ; then
+	((INC++))
+	if [ $((INC % 3)) == 0 ] && [ $((INC % 5)) == 0 ] ; then
+		echo "FizzBuzz"
+	elif [ $((INC % 3)) == 0 ] ; then
 		echo "Fizz"
 	elif [ $((INC % 5)) == 0 ] ; then
 		echo "Buzz"
