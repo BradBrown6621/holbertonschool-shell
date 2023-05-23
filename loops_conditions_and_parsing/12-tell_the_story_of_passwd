@@ -2,8 +2,8 @@
 #
 
 IFS=":"
-while IFS=":" read -r username userid GID homedir shell
+while IFS=":" read -r username password userid GID GECOS homedir shell 
 do
 	echo " The user $username is part of the $GID gang, lives in $homedir, and rides $shell"
-	echo "$userid/'s place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO"
+	echo "$userid/'s place is protected by the passcode $password, more info about the user here: $GECOS"
 done < /etc/passwd
