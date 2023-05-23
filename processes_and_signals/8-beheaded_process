@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # 
 
-exit "$(grep -f ./7-highlander)"
+pkill -f ./7-highlander -9
